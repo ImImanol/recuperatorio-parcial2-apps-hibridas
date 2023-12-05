@@ -1,0 +1,152 @@
+/* Estilos generales para el encabezado */
+header {
+  color: #000000;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el logotipo */
+header h1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header h1 a:hover {
+  color: #4626e4;
+}
+
+/* Estilos para la navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #4626e4;
+}
+
+/* Estilos para la sección del carrito */
+.container-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.container-cart-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon-cart {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.count-products {
+  background-color: #4626e4;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.8em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Estilos para la lista de productos en el carrito */
+.container-cart-products {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden-cart {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.row-product {
+  margin-bottom: 10px;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.info-cart-product {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.titulo-producto-carrito {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.precio-producto-carrito {
+  font-weight: bold;
+  color: #4626e4;
+}
+
+.cart-total {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-pagar {
+  font-weight: bold;
+  color: #4626e4;
+}
+
+.btn-clear-all {
+  background-color: #4626e4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-clear-all:hover {
+  background-color: #000000;
+}
